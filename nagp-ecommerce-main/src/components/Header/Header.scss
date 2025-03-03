@@ -1,0 +1,76 @@
+@import "../../App.scss";
+
+.header{
+    background: rgb(0,51,102);
+    background: linear-gradient(180deg, rgba(0, 51, 102, 1) 50%, rgba(0, 0, 48, 1) 80%, rgba(0, 0, 9, 1) 100%);
+
+
+    .header-cnt-top{
+        border-bottom: 1px solid lighten($clr-orange, 10%);
+    }
+
+    .rectangle-box {
+        width: 100px;              /* Width of the rectangle */
+        height: 10px;             /* Height of the rectangle */
+        background-color: white; /* Background color */
+        border-radius: 1px;        /* Optional rounded corners */
+        border: 2px solid white; /* Border color and thickness */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        margin: 5px auto;         /* Center the box horizontally with auto margin */
+        padding: 10px;             /* Padding inside the box */
+        display: flex;             /* Flexbox for content alignment */
+        justify-content: center;   /* Center content horizontally */
+        align-items: center;       /* Center content vertically */
+        color: midnightblue;              /* Text color inside the box */
+        font-size: 13px;           /* Font size */
+        text-align: center;        /* Center text */
+    }
+
+    /* Set initial state */
+    .shopping-cart-icon {
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect: Apply combined spin and bounce */
+    .shopping-cart-icon:hover {
+        animation: spinBounce 1s ease-in-out infinite;
+    }
+
+    @keyframes spinBounce {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+        25% {
+            transform: translateY(-5px) rotate(90deg);
+        }
+        50% {
+            transform: translateY(0) rotate(180deg);
+        }
+        75% {
+            transform: translateY(-5px) rotate(270deg);
+        }
+        100% {
+            transform: translateY(0) rotate(360deg);
+        }
+    }
+
+    /* Spin the wheels */
+    .shopping-cart-icon .wheel {
+        transition: transform 1s linear;
+    }
+
+    .shopping-cart-icon:hover .wheel {
+        transform: rotate(360deg); /* Spin the wheels */
+    }
+
+
+    @media screen and (max-width: 992px){
+        .header-cnt-top{
+            flex-direction: column;
+            .header-cnt-top-l{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    
+}
