@@ -1,12 +1,12 @@
 @import "../../App.scss";
 
 .header{
-    background: rgb(0,51,102);
-    background: linear-gradient(180deg, rgba(0, 51, 102, 1) 50%, rgba(0, 0, 48, 1) 80%, rgba(0, 0, 9, 1) 100%);
+    background: deeppink;
+    background:  linear-gradient(50deg,black 10%, deeppink 50%, deeppink 80%, black 100%);
 
 
     .header-cnt-top{
-        border-bottom: 1px solid lighten($clr-orange, 10%);
+        border-bottom: 0px solid lighten($clr-theme, 9%);
     }
 
     .rectangle-box {
@@ -21,7 +21,7 @@
         display: flex;             /* Flexbox for content alignment */
         justify-content: center;   /* Center content horizontally */
         align-items: center;       /* Center content vertically */
-        color: midnightblue;              /* Text color inside the box */
+        color: deeppink;              /* Text color inside the box */
         font-size: 13px;           /* Font size */
         text-align: center;        /* Center text */
     }

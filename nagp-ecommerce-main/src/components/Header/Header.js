@@ -43,7 +43,7 @@ const Header = () => {
                       <i className='fa-solid fa-bag-shopping shopping-cart-icon'></i>
                     </span>
                           <span className='navbar-brand-txt mx-2'>
-                      <span className='fw-7'>NAGP </span>Market1
+                      <span className='fw-7'>NAGP </span>Market
                     </span>
                       </Link>
                   </li>

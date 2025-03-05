@@ -27,7 +27,7 @@
             height: 0;
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
-            border-right: 5px solid $clr-orange;
+            border-right: 5px solid yellow;
         }
     }
 
@@ -47,7 +47,7 @@
         opacity: 0.8;
 
         .brand{
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid gray;
         padding-bottom: 0.6rem;
             span{
                 &:first-child{
@@ -76,7 +76,7 @@
                 font-size: 13px;
                 font-weight: 600;
                 font-family: $font-family-poppins;
-                color: darken($clr-orange, 5%);
+                color: darken(green, 5%);
             }
 
             &::after{
@@ -84,7 +84,7 @@
                 position: absolute;
                 top: calc(100% + 6px);
                 height: 1px;
-                background-color: lighten($clr-orange, 10%);
+                background-color: lighten(black, 10%);
                 width: 60px;
             }
         }
@@ -92,5 +92,12 @@
 
     &:hover{
         box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 5px -1px, rgba(0, 0, 0, 0.1) 0px 1px 20px -1px;
+    }
+
+    .border-box {
+        border: 2px solid yellow; /* Creates a yellow border */
+        background: black;
+        padding: 16px; /* Adjusts the padding to ensure content doesn't touch the border */
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
     }
 }

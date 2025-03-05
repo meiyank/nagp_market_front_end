@@ -14,14 +14,14 @@
 
     .cat-title{
         padding-bottom: 1rem;
-        color: midnightblue;
+        color: $clr-theme;
     }
     .sidebar-hide-btn{
         position: absolute;
         right: 2rem;
         transition: $transition-ease;
         &:hover{
-            color: midnightblue;
+            color: $clr-theme;
         }
     }
     .cat-list{
@@ -38,7 +38,7 @@
                 transition: $transition-ease;
 
                 &:hover{
-                    color: midnightblue;
+                    color: $clr-theme;
                     margin-left: 10px;
                 }
             }
